@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { dummy } from "./data/movieDummy.js";
 import Movie from "./components/Movie.jsx";
 import MovieDetail from "./components/MovieDetail.jsx"; // 상세 페이지 컴포넌트
+// 테스트
 
 function App() {
   return (
