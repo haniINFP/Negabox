@@ -1,36 +1,40 @@
 .movie-detail {
-  max-width: 800px;
+  max-width: 1200px; /* 더 넓은 최대 너비 */
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px; /* 더 넓은 패딩 */
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
   border-radius: 10px;
-}
-
-.movie-detail h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
+  display: flex;
+  align-items: flex-start; /* 포스터와 텍스트가 상단에 정렬되도록 */
 }
 
 .movie-detail img {
-  width: 100%;
+  width: 300px; /* 고정된 너비 */
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-right: 20px; /* 포스터와 텍스트 사이의 간격 */
 }
 
-.movie-detail p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
+.movie-detail-content {
+  max-width: 800px; /* 텍스트 영역의 최대 너비 */
 }
 
-.movie-detail p.rating {
-  font-size: 1.5em;
+.movie-detail-content h1 {
+  font-size: 3em; /* 더 큰 글꼴 크기 */
+  margin-bottom: 10px; /* 더 작은 아래 마진 */
+  color: #333;
+}
+
+.movie-detail-content p.rating {
+  font-size: 1.8em; /* 더 큰 글꼴 크기 */
   font-weight: bold;
   color: #e67e22;
-  text-align: center;
+  margin-bottom: 20px; /* 아래 마진 */
+}
+
+.movie-detail-content p {
+  font-size: 1.5em; /* 더 큰 글꼴 크기 */
+  line-height: 1.8; /* 더 큰 행간 */
+  color: #555;
 }
