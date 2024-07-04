@@ -25,7 +25,7 @@
 }
 
 .movie-detail img {
-
+  
   width: 300px; /* 고정된 너비 */
 
   border-radius: 10px;
@@ -80,17 +80,8 @@
   font-family: 'KOHIBaeumOTF';
   font-size: 30px;
   margin-top: 50px;
-  max-width: 1200px; /* 더 넓은 최대 너비 */
+  max-width: 800px; /* 텍스트 영역의 최대 너비 */
   padding: 40px; /* 더 넓은 패딩 */
-}
-
-h6 {
-  font-family: 'GmarketSansMedium'; /*폰트 조정*/
-  font-size: 20px; /* 더 넓은 최대 너비 */
-  color: #555;
-  margin-bottom: 10px; /* 더 작은 아래 마진 */
-  margin-top: 0px;
-  
 }
 
 .movie-detail-content span.vote-count {

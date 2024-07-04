@@ -34,50 +34,49 @@ function MovieDetail() {
   }
 
   return (
-    <div className="movie-detail">
-      <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
-      <div className="movie-detail-content">
-        <h1>{movie.title}</h1>
-        <p className="rating">☆ {movie.vote_average} / 10</p>
-        <p>{movie.overview}</p>
-        
-        {loading ? (
-          <p>Loading reviews...</p>
-        ) : error ? (
-          <p>{error}</p>
-        ) : (
-          <div className="reviews">
-            <h2>Reviews</h2>
-            {reviews.length > 0 ? (
-              reviews.map((review) => (
-                <div key={review.id} className="review">
-                  <h3>{review.author}</h3>
-                  <p>{review.content}</p>
-                </div>
-              ))
-            ) : (
-              <p>No reviews available</p>
-            )}
-          </div>
-        )}
     <div>
-      <div className="movie-detail">
+        <div className="movie-detail">
         <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
         <div className="movie-detail-content">
           <h1>{movie.title}</h1>
-          <h6>{movie.original_title}</h6>
-          <br></br>
-          <br></br>
-          <p>개봉일자: {movie.release_date}</p>
-          <span>평점 </span><span className="rating">{movie.vote_average}</span><span className="vote-count">{movie.vote_count}</span>
-          <p>언어: {movie.original_language}</p>
-          <p>관심도: {movie.popularity}</p>
-        </div>        
+            <h6>{movie.original_title}</h6>
+            <br></br>
+            <br></br>
+            <p>개봉일자: {movie.release_date}</p>
+            <span>평점 </span><span className="rating">{movie.vote_average}</span><span className="vote-count">{movie.vote_count}</span>
+            <p className="rating">☆ {movie.vote_average} / 10</p>
+            <p>언어: {movie.original_language}</p>
+            <p>관심도: {movie.popularity}</p>        
+        </div>
       </div>
-      <div className="scriptTitle">|시놉시스</div>
-      <p className="movieScript">{movie.overview}</p>
+      <div>
+        <div className="scriptTitle">|시놉시스</div>
+        <p className="movieScript">{movie.overview}</p>
+      </div>
+      <div>
+        {loading ? (
+            <p>Loading reviews...</p>
+          ) : error ? (
+            <p>{error}</p>
+          ) : (
+            <div className="reviews">
+              <h2>Reviews</h2>
+              {reviews.length > 0 ? (
+                reviews.map((review) => (
+                  <div key={review.id} className="review">
+                    <h3>{review.author}</h3>
+                    <p>{review.content}</p>
+                  </div>
+                ))
+              ) : (
+                <p>No reviews available</p>
+              )}
+            </div>
+          )}
+      </div>  
     </div>
+    
   );
-}
+};
 
 export default MovieDetail;
