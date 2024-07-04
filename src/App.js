@@ -19,6 +19,8 @@ function App() {
                   title={item.title}
                   poster_path={item.poster_path}
                   vote_average={item.vote_average}
+                  popularity={item.popularity}
+                  release_date={item.release_date}
                 />
               ))
             }

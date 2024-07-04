@@ -43,14 +43,24 @@ body {
   padding: 20px;
 }
 
-.movie-info h4 {
+.title {
   margin: 0;
   font-family: 'GmarketSansMedium';
-} /*영화 이름 폰트 변경*/
-
-.movie-info span {
-  margin-left: 3px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
 }
+/* 홈 화면 타이틀 */
+
+.popularity {
+  margin: 0;
+  font-family: 'GmarketSansMedium';
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+}
+/* 홈 화면 관심도 */
+
 
 .headTitle {
   margin-top: 40px; /*위쪽 마진 조정*/

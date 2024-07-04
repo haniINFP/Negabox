@@ -36,10 +36,10 @@
 
 .movie-detail-content h1 {
   font-size: 3em; /* 더 큰 글꼴 크기 */
-  margin-bottom: 10px; /* 더 작은 아래 마진 */
   color: #333;
   font-family: 'KOHIBaeumOTF'; /*폰트 조정*/
   font-size: 30; /*폰트 크기 +*/
+  margin-bottom: 0px;
 }
 
 .movie-detail-content span {
@@ -53,7 +53,8 @@
   background-color: #e67e22;
   border-radius: 5px;
   font-size: 27px;
-  font-family: 'GmarketSansMedium'
+  font-family: 'GmarketSansMedium';
+  margin-left: 20px;
 }
 
 .movie-detail-content p {
@@ -79,4 +80,20 @@
   margin-top: 50px;
   max-width: 1200px; /* 더 넓은 최대 너비 */
   padding: 40px; /* 더 넓은 패딩 */
+}
+
+h6 {
+  font-family: 'GmarketSansMedium'; /*폰트 조정*/
+  font-size: 20px; /* 더 넓은 최대 너비 */
+  color: #555;
+  margin-bottom: 10px; /* 더 작은 아래 마진 */
+  margin-top: 0px;
+  
+}
+
+.movie-detail-content span.vote-count {
+  font-size: 15px; /* 더 넓은 최대 너비 */
+  color: #777;
+  margin-left: 10px;
+  font-family: 'GmarketSansMedium'
 }
