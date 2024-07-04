@@ -80,3 +80,4 @@ function MovieDetail() {
 };
 
 export default MovieDetail;
+// 리뷰 위치 변경
