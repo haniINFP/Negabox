@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { dummy } from "../data/movieDummy.js";
+import { dummy } from "../data/movieNowPlaying.js";
 
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/w1280/";
 
