@@ -1,6 +1,22 @@
-body {
-  background-color: #22254b;
+@font-face {
+  font-family: 'Cafe24Behappy';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Behappy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+  background-color: white;
+} /*배경화면 흰색으로 변경*/
 
 .movie-container {
   width: 250px;
@@ -8,7 +24,7 @@ body {
   color: white;
   background-color: #373b69;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 .movie-container img {
   max-width: 100%;
@@ -29,10 +45,31 @@ body {
 
 .movie-info h4 {
   margin: 0;
-}
+  font-family: 'GmarketSansMedium';
+} /*영화 이름 폰트 변경*/
 
 .movie-info span {
   margin-left: 3px;
+}
+
+.headTitle {
+  margin-top: 40px; /*위쪽 마진 조정*/
+  height: 100px;
+  color: #22254b;
+  text-align: center; /*사이트 타이틀 가운데로 위치 조정*/
+  font-size: 60px; /*사이트 타이틀 사이즈 변경*/
+  font-family: 'Cafe24Behappy'; /*사이트 타이틀 폰트 변경*/
+}
+
+.menu {
+  display: flex;
+  color: #22254b;
+  justify-content: space-around;
+  height: 50px;
+  font-family: 'GmarketSansMedium';
+  margin-bottom: 20px;
+  font-size: 20px;
+  /*메뉴 화면 조정 +추후 해당 글자 클릭하면 각 링크로 연결되는 기능 필요*/
 }
 
 a {
