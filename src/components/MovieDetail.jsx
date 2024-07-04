@@ -34,20 +34,24 @@ function MovieDetail() {
   }
 
   return (
+    <>
     <div className="movie-detail">
       <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
       <div className="movie-detail-content">
         <h1>{movie.title}</h1>
         <p className="rating">☆ {movie.vote_average} / 10</p>
         <p>{movie.overview}</p>
-        
-        {loading ? (
+      </div>
+    </div>
+    
+    <div className="movie-review">
+    {loading ? (
           <p>Loading reviews...</p>
         ) : error ? (
           <p>{error}</p>
         ) : (
           <div className="reviews">
-            <h2>Reviews</h2>
+            <h2>리뷰</h2>
             {reviews.length > 0 ? (
               reviews.map((review) => (
                 <div key={review.id} className="review">
@@ -60,8 +64,8 @@ function MovieDetail() {
             )}
           </div>
         )}
-      </div>
     </div>
+    </>
   );
 }
 
