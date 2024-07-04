@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { dummy } from "../data/movieNowPlaying.js";
-
+/* 변경*/
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/w1280/";
 
 function MovieDetail() {
@@ -16,7 +16,7 @@ function MovieDetail() {
     <div className="movie-detail">
       <h1>{movie.title}</h1>
       <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
-      <p>Rating: {movie.vote_average}</p>
+      <p className="rating">Rating: {movie.vote_average}</p>
       <p>{movie.overview}</p>
     </div>
   );
