@@ -7,7 +7,7 @@ import Nowplaying from "./routes/Nowplaying.js";
 import Popular from "./routes/Popular.js";
 import Toprated from "./routes/Toprated.js";
 import Upcoming from "./routes/Upcoming.js";
-
+import MovieDetail from "./components/MovieDetail.jsx";
 
 function App() {
       return (
@@ -22,6 +22,7 @@ function App() {
           <Route path = "/popular" Component= {Popular} />
           <Route path="/toprated" Component= {Toprated} />
           <Route path="/upcoming" Component= {Upcoming} />
+          <Route path="/detail/:id" element = {<MovieDetail />} />
             </Routes>
       </HashRouter>
       </>
