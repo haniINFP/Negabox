@@ -14,13 +14,19 @@ function MovieDetail() {
   }
 
   return (
-    <div className="movie-detail">
-      <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
-      <div className="movie-detail-content">
-        <h1>{movie.title}</h1>
-        <p className="rating">Rating: {movie.vote_average}</p>
-        <p>{movie.overview}</p>
+    <div>
+      <div className="movie-detail">
+        <img src={IMG_BASE_URL + movie.poster_path} alt={movie.title} />
+        <div className="movie-detail-content">
+          <h1>{movie.title}</h1>
+          <br></br>
+          <p>개봉일자: {movie.release_date}</p>
+          <span>평점 </span><span className="rating">{movie.vote_average}</span>
+          <p>언어: {movie.original_language}</p>
+        </div>        
       </div>
+      <div className="scriptTitle">|시놉시스</div>
+      <p className="movieScript">{movie.overview}</p>
     </div>
   );
 }

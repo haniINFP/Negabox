@@ -42,11 +42,18 @@
   font-size: 30; /*폰트 크기 +*/
 }
 
-.movie-detail-content p.rating {
-  font-size: 1.8em; /* 더 큰 글꼴 크기 */
-  font-weight: bold;
-  color: #e67e22;
-  margin-bottom: 20px; /* 아래 마진 */
+.movie-detail-content span {
+  color: #555;
+  font-size: 25px;
+  font-family: 'GmarketSansMedium'
+}
+
+.movie-detail-content span.rating {
+  color: white;
+  background-color: #e67e22;
+  border-radius: 5px;
+  font-size: 27px;
+  font-family: 'GmarketSansMedium'
 }
 
 .movie-detail-content p {
@@ -54,5 +61,22 @@
   line-height: 1.8; /* 더 큰 행간 */
   color: #555;
   font-family: 'GmarketSansMedium'; /*폰트 조정*/
-  
+}
+
+.movieScript {
+  font-size: 1.5em; /* 더 큰 글꼴 크기 */
+  line-height: 1.8; /* 더 큰 행간 */
+  color: #555;
+  font-family: 'GmarketSansMedium'; /*폰트 조정*/
+  max-width: 1200px; /* 더 넓은 최대 너비 */
+  margin: 0 auto;
+  padding: 40px; /* 더 넓은 패딩 */
+  }
+
+.scriptTitle {
+  font-family: 'KOHIBaeumOTF';
+  font-size: 30px;
+  margin-top: 50px;
+  max-width: 1200px; /* 더 넓은 최대 너비 */
+  padding: 40px; /* 더 넓은 패딩 */
 }
