@@ -7,7 +7,7 @@ export default function Movie({ id, title, poster_path, vote_average }) {
   return (
       <Link to={`/detail/${id}`}>
         <div className="movie-container">
-          <img src={IMG_BASE_URL + poster_path} alt="영화포스터" />
+          <img src={IMG_BASE_URL + poster_path} alt="영화포스터" width={'400px'} height={'300x'} />
           <div className="movie-info">
             <h4>{title}</h4>
             <span>{vote_average}</span>

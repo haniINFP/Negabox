@@ -1,33 +1,29 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { dummy } from "./data/movieNowPlaying.js";
-import Movie from "./components/Movie.jsx";
-import MovieDetail from "./components/MovieDetail.jsx"; // 상세 페이지 컴포넌트
-// 2222222
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
+
+import Navigation from "./components/Navigation";
+
+import './index.css';
+import Nowplaying from "./routes/Nowplaying.js";
+import Popular from "./routes/Popular.js";
+import Toprated from "./routes/Toprated.js";
+import Upcoming from "./routes/Upcoming.js";
+
 
 function App() {
-  return (
-    <Router>
-      <div className="app-container">
+      return (
+        <>
+        <div class="headTitle head">
+           NEGABOX
+        </div>
+      <HashRouter>
+        <Navigation />
         <Routes>
-          <Route
-            path="/"
-            element={
-              dummy.results.map((item) => (
-                <Movie
-                  key={item.id}
-                  id={item.id} // id 전달
-                  title={item.title}
-                  poster_path={item.poster_path}
-                  vote_average={item.vote_average}
-                />
-              ))
-            }
-          />
-          <Route path="/detail/:id" element={<MovieDetail />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
-
+          <Route path="/" exact ={true} Component = {Nowplaying} />
+          <Route path = "/popular" Component= {Popular} />
+          <Route path="/toprated" Component= {Toprated} />
+          <Route path="/upcoming" Component= {Upcoming} />
+            </Routes>
+      </HashRouter>
+      </>
+    )}
 export default App;
