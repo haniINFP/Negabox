@@ -43,8 +43,7 @@ function MovieDetail() {
             <br></br>
             <br></br>
             <p>개봉일자: {movie.release_date}</p>
-            <span>평점 </span><span className="rating">{movie.vote_average}</span><span className="vote-count">{movie.vote_count}</span>
-            <p className="rating">☆ {movie.vote_average} / 10</p>
+            <span className="rating">☆ {movie.vote_average} / 10</span><span className="vote-count">({movie.vote_count})</span>
             <p>언어: {movie.original_language}</p>
             <p>관심도: {movie.popularity}</p>        
         </div>
