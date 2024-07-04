@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { dummy } from "../data/movieDummy.js";
-import "./MovieDetail.css"; // CSS 파일을 import 합니다.
-
+import { dummy } from "../data/movieNowPlaying.js";
+/* 변경*/
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/w1280/";
 
 function MovieDetail() {
