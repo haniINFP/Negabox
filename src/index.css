@@ -34,3 +34,7 @@ body {
 .movie-info span {
   margin-left: 3px;
 }
+
+a {
+  text-decoration-line: none;
+}
