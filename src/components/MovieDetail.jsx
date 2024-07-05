@@ -59,12 +59,12 @@ function MovieDetail() {
             <p>{error}</p>
           ) : (
             <div className="reviews">
-              <h2>Reviews</h2>
+              <h2>|리뷰</h2>
               {reviews.length > 0 ? (
                 reviews.map((review) => (
                   <div key={review.id} className="review">
-                    <h3>{review.author}</h3>
-                    <p>{review.content}</p>
+                    <h3 className="reviewss">{review.author}</h3>
+                    <p className="reviewss">{review.content}</p>
                   </div>
                 ))
               ) : (
