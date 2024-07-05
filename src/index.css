@@ -29,6 +29,7 @@ body {
   background-color: #31363F;
   border-radius: 5px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 .movie-container img {
   max-width: 100%;
@@ -93,3 +94,23 @@ a {
   margin: 20px 0;
 }
 /* navigation 밑에 실선 추가 */
+
+
+.movie-container .overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.movie-container:hover .overview {
+  opacity: 1;
+}
