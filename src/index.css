@@ -15,14 +15,14 @@
 
 
 body {
-  background-color: rgba(0, 0, 0, 0.967);
+  background-color: #222831;
 } /*배경화면 흰색으로 변경*/
 
 .movie-container {
   width: 250px;
   margin: 16px;
   color: white;
-  background-color: #494e88;
+  background-color: #31363F;
   border-radius: 5px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }

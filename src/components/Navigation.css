@@ -76,9 +76,9 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color:#EEEEEE;
 }
 
 .nav a.active-link {
-  color: rgb(170, 183, 242); /* 활성화된 링크의 색상 */
+  color: #76ABAE; /* 활성화된 링크의 색상 */
 }
