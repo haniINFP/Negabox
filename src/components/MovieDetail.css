@@ -13,22 +13,20 @@
 }
 
 .movie-detail {
-  max-width: 1200px; /* 더 넓은 최대 너비 */
-  margin: 0 auto;
+  max-width: 100%; /* 더 넓은 최대 너비 */
+  margin: 0px;
   padding: 40px; /* 더 넓은 패딩 */
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
-  border-radius: 10px;
+  background-color: #373b69;
   display: flex;
   align-items: flex-start; /* 포스터와 텍스트가 상단에 정렬되도록 */
 }
 
 .movie-detail img {
-  
   width: 300px; /* 고정된 너비 */
   border-radius: 10px;
   margin-right: 20px; /* 포스터와 텍스트 사이의 간격 */
+  margin-left: 50px;
 }
 
 .movie-detail-content {
@@ -37,29 +35,29 @@
 
 .movie-detail-content h1 {
   font-size: 3em; /* 더 큰 글꼴 크기 */
-  color: #333;
+  color: white;
   font-family: 'KOHIBaeumOTF'; /*폰트 조정*/
   font-size: 30; /*폰트 크기 +*/
   margin-bottom: 0px;
+  font-weight: 300;
 }
 
 .movie-detail-content span {
-  color: #555;
-  font-size: 25px;
+  color: white;
+  font-size: 20px;
   font-family: 'GmarketSansMedium'
 }
 
 .movie-detail-content span.rating {
-  color: #555;
+  color: white;
   border-radius: 5px;
-  font-size: 27px;
   font-family: 'GmarketSansMedium';
 }
 
 .movie-detail-content p {
-  font-size: 1.5em; /* 더 큰 글꼴 크기 */
-  line-height: 1.8; /* 더 큰 행간 */
-  color: #555;
+  font-size: 20px; /* 더 큰 글꼴 크기 */
+  line-height: 1.2; /* 더 큰 행간 */
+  color: white;
   font-family: 'GmarketSansMedium'; /*폰트 조정*/
 }
 
@@ -71,7 +69,7 @@
   max-width: 1200px; /* 더 넓은 최대 너비 */
   margin: 0 auto;
   padding: 40px; /* 더 넓은 패딩 */
-  
+  margin-bottom: 100px;
   background-color: #f4f4f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
   border-radius: 10px;
@@ -81,23 +79,25 @@
   font-family: 'KOHIBaeumOTF';
   font-size: 30px;
   margin-top: 50px;
+  margin-left: 100px;
   max-width: 1200px; /* 텍스트 영역의 최대 너비 */
   padding: 10px; /* 더 넓은 패딩 */
 }
 
 .movie-detail-content span.vote-count {
   font-size: 18px; /* 더 넓은 최대 너비 */
-  color: #777;
+  color: white;
   margin-left: 10px;
   font-family: 'GmarketSansMedium'
 }
 
 .movie-detail-content h6 {
   font-size: 15px; /* 더 넓은 최대 너비 */
-  color: #777;
+  color: white;
   margin-left: 10px;
   font-family: 'GmarketSansMedium';
-  margin-top: 0px;
+  margin-bottom: 70px;
+  margin-top: 10px;
 }
 
 .reviews h2 {
@@ -106,6 +106,8 @@
   margin-top: 50px;
   max-width: 1200px; /* 텍스트 영역의 최대 너비 */
   padding: 10px; /* 더 넓은 패딩 */
+  margin-left: 100px;
+  font-weight: 300;
 }
 
 .review h3 {
@@ -120,7 +122,6 @@
   
   font-size: 1.1em; /* 더 큰 글꼴 크기 */
   line-height: 1.8; /* 더 큰 행간 */
-  font-family: 'GmarketSansMedium';
   color: #555;
   font-family: 'GmarketSansMedium'; /*폰트 조정*/
   max-width: 1200px; /* 더 넓은 최대 너비 */
@@ -129,14 +130,27 @@
   margin-bottom: 100px;
 }
 
-.reviewss {
+.reviews p {
   max-width: 1200px; /* 더 넓은 최대 너비 */
-  margin: 0 auto;
+  margin-bottom: 50px;
   padding: 40px; /* 더 넓은 패딩 */
-  font-family: Arial, sans-serif;
+  font-family: 'GmarketSansMedium';
   background-color: #f4f4f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
   border-radius: 10px;
   display: flex;
   align-items: flex-start; /* 포스터와 텍스트가 상단에 정렬되도록 */
+}
+
+.reviews h3 {
+  max-width: 1200px; /* 더 넓은 최대 너비 */
+  margin: 0 auto;
+  padding: 40px; /* 더 넓은 패딩 */
+  font-family: 'KOHIBaeumOTF';
+  background-color: white;
+  display: flex;
+  color:#373b69;
+  align-items: flex-start; /* 포스터와 텍스트가 상단에 정렬되도록 */
+  font-size: 25px;
+  font-weight: 700;
 }
