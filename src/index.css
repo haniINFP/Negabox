@@ -122,3 +122,11 @@ a {
 .movie-container:hover .overview {
   opacity: 1;
 }
+
+.movie-container:hover {
+  margin: 16px;
+  color: white;
+  background-color: #76ABAE;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
