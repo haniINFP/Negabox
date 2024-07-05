@@ -23,6 +23,7 @@ body {
 
 .movie-container {
   width: 250px;
+  height: 400px;
   margin: 16px;
   color: white;
   background-color: #31363F;
@@ -48,10 +49,15 @@ body {
 
 .title {
   margin: 0;
+  width: 300px; /* 부모 요소의 너비 */
+  height: 50px; /* 높이 고정 */
   font-family: 'GmarketSansMedium';
   font-size: 18px;
   color: white;
   font-weight: 700;
+  line-height: 1.5; /* 줄 간격 조정 */
+  word-wrap: break-word; /* 단어 단위 줄 바꿈 */
+  text-align: center;
 }
 /* 홈 화면 타이틀 */
 
