@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { dummy } from "../data/movieNowPlaying.js";
+import { dummy5 } from "../data/moviedummy.js";
 import MovieReview from "../data/movieReview.js"; 
 import "./MovieDetail.css"; // Import the CSS file
 
@@ -8,7 +8,7 @@ const IMG_BASE_URL = "https://image.tmdb.org/t/p/w1280/";
 
 function MovieDetail() {
   const { id } = useParams();
-  const movie = dummy.results.find((item) => item.id === parseInt(id));
+  const movie = dummy5.results.find((item) => item.id === parseInt(id));
 
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);

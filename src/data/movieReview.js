@@ -1,8 +1,8 @@
 const fetch = require('node-fetch');
-const { dummy } = require("../data/movieNowPlaying.js");
+const { dummy5 } = require("../data/moviedummy.js");
 
 async function MovieReview(id) {
-  const movie = dummy.results.find((item) => item.id === parseInt(id));
+  const movie = dummy5.results.find((item) => item.id === parseInt(id));
   if (!movie) {
     throw new Error('Movie not found');
   }
