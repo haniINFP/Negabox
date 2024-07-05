@@ -15,14 +15,14 @@
 
 
 body {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.967);
 } /*배경화면 흰색으로 변경*/
 
 .movie-container {
   width: 250px;
   margin: 16px;
   color: white;
-  background-color: #373b69;
+  background-color: #494e88;
   border-radius: 5px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -65,21 +65,10 @@ body {
 .headTitle {
   margin-top: 40px; /*위쪽 마진 조정*/
   height: 100px;
-  color: #22254b;
+  color: #ffffff;
   text-align: center; /*사이트 타이틀 가운데로 위치 조정*/
   font-size: 60px; /*사이트 타이틀 사이즈 변경*/
   font-family: 'Cafe24Behappy'; /*사이트 타이틀 폰트 변경*/
-}
-
-.menu {
-  display: flex;
-  color: #22254b;
-  justify-content: space-around;
-  height: 50px;
-  font-family: 'GmarketSansMedium';
-  margin-bottom: 20px;
-  font-size: 20px;
-  /*메뉴 화면 조정 +추후 해당 글자 클릭하면 각 링크로 연결되는 기능 필요*/
 }
 
 a {
