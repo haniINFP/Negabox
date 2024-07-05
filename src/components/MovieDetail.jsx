@@ -30,7 +30,7 @@ function MovieDetail() {
   }, [id]);
 
   if (!movie) {
-    return <div>Movie not found</div>;
+    return <div className="reviewss">Movie not found</div>;
   }
 
   return (
@@ -68,7 +68,7 @@ function MovieDetail() {
                   </div>
                 ))
               ) : (
-                <p>No reviews available</p>
+                <div className="reviewss"></div>
               )}
             </div>
           )}
