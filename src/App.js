@@ -15,8 +15,10 @@ function App() {
         <div class="headTitle head">
            NEGABOX
         </div>
+        
       <HashRouter>
         <Navigation />
+        <hr className="App-divider" />
         <Routes>
           <Route path="/" exact ={true} Component = {Nowplaying} />
           <Route path = "/popular" Component= {Popular} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="/detail/:id" element = {<MovieDetail />} />
             </Routes>
       </HashRouter>
+      
       </>
     )}
 export default App;
