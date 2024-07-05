@@ -10,11 +10,12 @@ export default function Movie({ id, title, poster_path, popularity, overview }) 
       <Link to={`/detail/${id}`}>
         <div className="movie-container">
           <img src={IMG_BASE_URL + poster_path} alt="영화포스터" width={'400px'} height={'300x'} />
-          <div className="overview">{overview}</div>
+          <div className="overview">{overview.slice(0,100)}.....</div>
           <div className="movie-info">
             <div className="title">{title}</div>
             <div className="popularity">{popularity}</div>
           </div>
+          
         </div>
       </Link>
   );

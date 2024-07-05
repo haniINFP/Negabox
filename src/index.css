@@ -109,6 +109,13 @@ a {
   color: white;
   opacity: 0;
   transition: opacity 0.2s;
+  font-family: 'Cafe24Behappy'; /*사이트 타이틀 폰트 변경*/
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 650;
+  word-spacing: 0.3em; 
 }
 
 .movie-container:hover .overview {
