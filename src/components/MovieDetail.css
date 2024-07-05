@@ -71,6 +71,10 @@
   max-width: 1200px; /* 더 넓은 최대 너비 */
   margin: 0 auto;
   padding: 40px; /* 더 넓은 패딩 */
+  
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
+  border-radius: 10px;
   }
 
 .scriptTitle {
@@ -123,4 +127,16 @@
   margin: 0 auto;
   padding: 10px; /* 더 넓은 패딩 */
   margin-bottom: 100px;
+}
+
+.reviewss {
+  max-width: 1200px; /* 더 넓은 최대 너비 */
+  margin: 0 auto;
+  padding: 40px; /* 더 넓은 패딩 */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 더 큰 그림자 */
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start; /* 포스터와 텍스트가 상단에 정렬되도록 */
 }
