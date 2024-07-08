@@ -13,7 +13,7 @@ function App() {
       return (
         <>
         <div class="headTitle head">
-           NEGABOX
+          NEGABOX
         </div>
         
       <HashRouter>
